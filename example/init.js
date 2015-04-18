@@ -12,8 +12,7 @@ jQuery(document).ready(function($) {
 
         $slider.css({'width' : $single_slide.length*1260+'px', 'left':- 1260+left_offset + 'px'});
 
-        $single_slide.eq(0).addClass('active');
-        $('.single_slide:last-child').prependTo($slider);
+        $single_slide.eq(1).addClass('active');
 
         var $prev = $('.active').prev();
         var $next = $('.active').next();
@@ -38,7 +37,7 @@ jQuery(document).ready(function($) {
                 easing: easing,
                 step: items,
             }, duration, function () {
-                $('.single_slide:last').before($('single_slide:first'));
+                $('.single_slide:last').after($('single_slide:first'));
             });
         }
 

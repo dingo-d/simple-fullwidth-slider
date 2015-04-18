@@ -17,12 +17,14 @@
 	overflow: hidden;
 	opacity: 0.15;
 	width: 1260px;
+	cursor: pointer;
 	-webkit-transition: opacity 800ms ease-in-out;
 	transition: opacity 800ms ease-in-out;
 }
 
 .slider .single_slide.active{
 	opacity: 1;
+	cursor: default;
 	-webkit-transition: opacity 800ms ease-in-out;
 	transition: opacity 800ms ease-in-out;
 }

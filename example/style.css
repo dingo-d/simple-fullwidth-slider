@@ -1,0 +1,28 @@
+/***************** Image Slider ****************/
+
+.slider{
+	list-style: none;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider .single_slide{
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+	border-radius: 0px;
+	overflow: hidden;
+	opacity: 0.15;
+	width: 1260px;
+	-webkit-transition: opacity 800ms ease-in-out;
+	transition: opacity 800ms ease-in-out;
+}
+
+.slider .single_slide.active{
+	opacity: 1;
+	-webkit-transition: opacity 800ms ease-in-out;
+	transition: opacity 800ms ease-in-out;
+}
